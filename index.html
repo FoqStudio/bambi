@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="script.js"></script>
+    <style>
+        .MainBlock{ /* Ten div stworzy tak jakby kontener na wszystko co bedzie sie znajdowac w stronie, nie wiem czy potrzebny ale tak mi jakos lepiej jak jest */
+            width: 100%;
+            height: 720px;
+            border: red solid 3px;
+        }
+        .SplitScreen{ /* Tu dzielisz strone na pół, lewa strona zajmuje 60% z szerokośći strony i bedzie w niej wiekszosc rzeczy, po prawej bedzie div w ktorym zrobie taki jakby profil swoj */
+            width: 59.5%;
+            height: 720px;
+            border: red solid 1px;
+            float: left;
+        }
+        .HorizontalDivision{ /* Jak podzielilismy ekran juz na dwie czesci, to div o tej klasie bedzie dzielil lewą czesc na dwie czesci tyle że poziomo, górna czesc ktora bedzie dość cienka bedzie miejscem na jakies logo albo napis ktorego jeszcze nie wymyslilem */
+            width: 100%;
+            height: 150px;
+            border: red solid 1px;
+            float: left;
+        }
+        .SecondScreen{ /* Jeśli czyta to Pan Ciuła przepraszam za ubogie nazwy, w każdym razie div o tej klasie zajmie pozostałe miejsce zostawione przez .SplitScreen */
+            width: 40%;
+            height: 720px;
+            border: red solid 1px;
+            float: left;
+        }
+        .Profile{ 
+            width: 400px;
+            height: 600px;
+            border: red solid 2px;
+            margin: auto;
+            margin-top: 60px;
+        }
+        .TilesBox{ /* Tworze se teraz kolejną sekcje która bedzie pod tą sekcją na logo */  
+            width: 100%;
+            height: 570px;
+            border: 1px solid red;
+            float: inline-start;
+        }
+        .LastSplit{ /* Ostatnie dzielenie jakiegos kontenera, ono podzieli ten kontener z klasą tilexbox czyli ten ktory bedzie pod logiem na dwie rowne czesci poziomo, nie wiem czy to konieczne ale ulatwi mi zadanie rozmieszczenia 4 prostokątów w równych odstępach itp */
+            height: 260px;
+            width: 100%;
+            border: solid 1px red;
+            float: inline-start;
+        }
+        .Tile {
+
+        }
+    </style>
+    <div class="MainBlock">
+    <div class="SplitScreen">
+        <div class="HorizontalDivision">test2</div>
+        <div class="TilesBox">
+            <div class="LastSplit"></div>
+            testu</div>
+    </div>
+    <div class="SecondScreen">
+        <div class="Profile">test</div>
+    </div>
+    </div>
+  </body>
+</html>
