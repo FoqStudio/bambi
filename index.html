@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Strona medalu</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -16,6 +16,10 @@
             color:#669999 ;
             margin:auto;
             padding: 50px 0;
+        }
+        p{
+            color: #0D4D4D;
+            margin: 10px;
         }
         body{
             background-color: #226666;
@@ -49,18 +53,18 @@
         .TilesBox{ /* Tworze se teraz kolejną sekcje która bedzie pod tą sekcją na logo */  
             width: 100%;
             height: 570px;
-            float: inline-start;
+            float: left;
         }
         .LastSplits{ /* Ostatnie dzielenie jakiegos kontenera, ono podzieli ten kontener z klasą tilexbox czyli ten ktory bedzie pod logiem na dwie rowne czesci poziomo, nie wiem czy to konieczne ale ulatwi mi zadanie rozmieszczenia 4 prostokątów w równych odstępach itp */
             height: 285px;
             width: 100%;
-            float: inline-start;
+            float: left;
         }
         .Tile {
             background-color: #0D4D4D;
             width: 300px;
             height: 150px;
-            float: inline-end;
+            float: right;
             margin-top: 85px;
             margin-right: 6%;
         }
@@ -73,7 +77,7 @@
             width: 300px;
             height: 150px;
 
-            float: inline-end;
+            float: right;
             margin-top: 25px;
             margin-right: 6%;
         }
@@ -88,9 +92,11 @@
             <img src="Kacper Fokt Logo.png"></img>
         </div>
         <div class="LastSplits">
+            <a href="subwebsite.html">
             <div class="Tile">
-                <h1>Zamów newsletter!</h1>
+                <h1>Zdjęcia shreka!</h1>
             </div>
+            </a>
             <div class="Tile">
                 <h1>Zamów newsletter!</h1>
             </div>
@@ -105,7 +111,13 @@
         </div>
     </div>
     <div class="SecondScreen">
-        <div class="Profile">test</div>
+        <div class="Profile">
+            <h2 style="text-align: center; color: #0D4D4D; padding: 50px; "">Moja strona na temat mojej własnej strony</h2>
+            <p>
+                Witam na mojej stronie internetowej lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <img src="foqstudio.png" style="margin-left: 70.5px;";></img>
+        </div>
     </div>
     </div>
   </body>
