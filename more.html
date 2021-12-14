@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        }
+
+        .grid-container > div {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 30px;
+        }
+
+        .grid-container :hover{
+            background-color: aquamarine;
+        }
+
+        .item1 {
+        grid-row: 1 / span 2;
+        }
+
+
+        @font-face { font-family: christmas cards; src: url('Christmas Cards xxx.ttf'); } 
+        h1{
+            font-family: christmas cards;
+            text-align: center;
+        }
+
+        .staszek{
+            padding-top: 30px;
+        }
+    </style>
+    <h1>Ryhoj koko !</h1>
+
+    <div class="grid-container">
+        <div class="item1">
+            <img src="imgs/stachu.PNG"></img>
+        </div>
+        <div class="item2">
+            <img src="imgs/stachu.PNG" width="200px" height="200px" class="staszek"></img>
+        </div>
+        <div class="item3">
+            <img src="imgs/stachu.PNG" width="200px" height="200px" class="staszek"></img>
+        </div>  
+        <div class="item4">
+            <img src="imgs/stachu.PNG" width="200px" height="200px" class="staszek"></img>
+        </div>
+        <div class="item5">
+            <img src="imgs/stachu.PNG" width="200px" height="200px" class="staszek"></img>
+        </div>
+        <div class="item6">
+            <img src="imgs/stachu.PNG" width="200px" height="200px" class="staszek"></img>
+        </div>
+        <div class="item7">
+            <img src="imgs/stachu.PNG" width="200px" height="200px" class="staszek"></img>
+        </div>
+      </div>
+
+  </body>
+</html>
